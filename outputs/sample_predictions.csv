@@ -1,0 +1,26 @@
+timestamp,source_id,content_fragment,score,status
+22:31:08.253,SRC-272,I absolutely love how great the service is now.,0.934,POSITIVE
+22:08:08.253,SRC-765,I noticed the UI changed. It seems normal.,0.445,NEUTRAL
+20:29:08.253,SRC-639,I'm experiencing terrible timeout issues today.,0.282,NEGATIVE
+20:25:08.253,SRC-310,"Wow, this is reliable! My team is so happy.",0.84,POSITIVE
+18:55:08.253,SRC-203,Why is the service so terrible? Fix the bug!,0.233,NEGATIVE
+17:01:08.253,SRC-179,The system is currently normal.,0.451,NEUTRAL
+16:58:08.253,SRC-192,Constant error and error. Really frustrating exper...,0.159,NEGATIVE
+16:08:08.253,SRC-172,"Just tried the new feature, it is incredibly intui...",0.733,POSITIVE
+14:57:08.253,SRC-194,I absolutely love how intuitive the service is now...,0.721,POSITIVE
+11:54:08.253,SRC-812,Update released today. Status is unchanged.,0.513,NEUTRAL
+11:35:08.253,SRC-258,I'm experiencing terrible crash issues today.,0.142,NEGATIVE
+10:27:08.253,SRC-374,"Wow, this is efficient! My team is so happy.",0.879,POSITIVE
+08:19:08.253,SRC-103,Just reading through the latest documentation. It'...,0.503,NEUTRAL
+07:49:08.253,SRC-354,Just reading through the latest documentation. It'...,0.57,NEUTRAL
+07:21:08.253,SRC-381,I absolutely love how intuitive the service is now...,0.984,POSITIVE
+05:46:08.253,SRC-472,"Just tried the new feature, it is incredibly amazi...",0.828,POSITIVE
+04:52:08.253,SRC-267,The best experience I've had so far. So great.,0.826,POSITIVE
+04:44:08.253,SRC-712,I'm experiencing terrible crash issues today.,0.162,NEGATIVE
+04:23:08.253,SRC-695,The system is currently typical.,0.515,NEUTRAL
+02:59:08.253,SRC-675,The best experience I've had so far. So great.,0.784,POSITIVE
+02:32:08.253,SRC-568,The best experience I've had so far. So intuitive.,0.971,POSITIVE
+01:41:08.253,SRC-569,"This is so unreliable, the app keeps throwing cras...",0.103,NEGATIVE
+01:20:08.253,SRC-766,"Just tried the new feature, it is incredibly intui...",0.881,POSITIVE
+01:13:08.253,SRC-136,"Just tried the new feature, it is incredibly relia...",0.77,POSITIVE
+00:29:08.253,SRC-161,I absolutely love how fast the service is now.,0.859,POSITIVE

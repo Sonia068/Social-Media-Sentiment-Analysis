@@ -101,8 +101,33 @@ def main():
     plt.tight_layout()
     plt.savefig(str(OUTPUTS_DIR / "model_comparison.png"), transparent=True)
     plt.close()
+
+    # ADDITIONAL PLOTS FOR README
+    print("Generating additional analytics plots...")
     
+    # 1. Sentiment Distribution (Pie)
+    plt.figure(figsize=(8,8))
+    counts = df['sentiment'].value_counts()
+    plt.pie(counts, labels=counts.index, autopct='%1.1f%%', colors=['#16A34A', '#DC2626', '#6B7280'], startangle=140)
+    plt.title('Overall Sentiment Distribution')
+    plt.savefig(str(OUTPUTS_DIR / "sentiment_distribution.png"), transparent=True)
+    plt.close()
+
+    # 2. Top Keywords (Bar) - simplified version
+    from sklearn.feature_extraction.text import CountVectorizer
+    cv = CountVectorizer(max_features=15, stop_words='english')
+    words_matrix = cv.fit_transform(df['cleaned_text'])
+    word_counts = pd.DataFrame(words_matrix.sum(axis=0).T, index=cv.get_feature_names_out(), columns=['count'])
+    word_counts = word_counts.sort_values(by='count', ascending=False)
+    
+    plt.figure(figsize=(10,6))
+    sns.barplot(x=word_counts['count'], y=word_counts.index, palette='Blues_d')
+    plt.title('Top 15 Keywords in Social Media Data')
+    plt.savefig(str(OUTPUTS_DIR / "keyword_importance.png"), transparent=True)
+    plt.close()
+
     print("Training outputs and models saved successfully.")
+
 
 if __name__ == "__main__":
     main()
